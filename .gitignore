@@ -1,0 +1,37 @@
+# Dependencias
+node_modules/
+
+# Builds
+.next/
+out/
+dist/
+build/
+.output/
+.vinxi/
+.nitro/
+.tanstack/
+
+# Variables de entorno y secretos (NUNCA subir)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Material de clase / binarios pesados
+*.zip
+*.pdf
+*.pptx
+~$*
+
+# Logs y temporales
+*.log
+npm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
