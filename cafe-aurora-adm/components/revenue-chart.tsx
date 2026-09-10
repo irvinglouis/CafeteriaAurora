@@ -1,5 +1,6 @@
 import { TrendingUp } from 'lucide-react'
-import { soles, weeklyRevenue } from '@/lib/dashboard-data'
+import { weeklyRevenue } from '@/lib/dashboard-data'
+import { formatPeruvianSoles } from '@/lib/utils'
 
 export function RevenueChart() {
   const max = Math.max(...weeklyRevenue.map((d) => d.monto))
@@ -18,7 +19,7 @@ export function RevenueChart() {
             Ingresos de la semana
           </h2>
           <p className="mt-0.5 text-sm text-muted-foreground">
-            Total {soles(total)} · mejor día {mejor.label}
+            Total {formatPeruvianSoles(total)} · mejor día {mejor.label}
           </p>
         </div>
         <span className="flex items-center gap-1.5 rounded-full bg-success/12 px-3 py-1 text-xs font-medium text-success">
@@ -42,7 +43,7 @@ export function RevenueChart() {
               }}
             >
               <span className="sr-only">
-                {d.label}: {soles(d.monto)}
+                {d.label}: {formatPeruvianSoles(d.monto)}
               </span>
             </div>
             <span className="text-xs text-muted-foreground">{d.dia}</span>

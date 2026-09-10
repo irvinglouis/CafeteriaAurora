@@ -1,6 +1,6 @@
 import { Clock } from 'lucide-react'
-import { orders, soles, type OrderStatus } from '@/lib/dashboard-data'
-import { cn } from '@/lib/utils'
+import { orders, type OrderStatus } from '@/lib/dashboard-data'
+import { cn, formatPeruvianSoles } from '@/lib/utils'
 
 const statusStyles: Record<OrderStatus, string> = {
   preparando: 'bg-warning/15 text-warning',
@@ -52,7 +52,7 @@ export function LiveOrders() {
 
             <div className="flex items-center gap-3">
               <span className="text-sm font-medium tabular-nums text-card-foreground">
-                {soles(o.total)}
+                {formatPeruvianSoles(o.total)}
               </span>
               <span
                 className={cn(

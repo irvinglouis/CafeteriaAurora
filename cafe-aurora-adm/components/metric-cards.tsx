@@ -9,7 +9,7 @@ import {
   Wallet,
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { cn } from '@/lib/utils'
+import { cn, formatPeruvianSoles } from '@/lib/utils'
 
 const metrics = [
   {
@@ -34,7 +34,7 @@ const metrics = [
     icon: Wallet,
     delta: 8.4,
     hint: 'S/.96 más que ayer',
-    format: (n: number) => `S/.${n.toLocaleString('es-PE')}`,
+    format: formatPeruvianSoles,
   },
   {
     label: 'Clientes nuevos',

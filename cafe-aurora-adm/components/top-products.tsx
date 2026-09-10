@@ -1,4 +1,5 @@
-import { soles, topProducts } from '@/lib/dashboard-data'
+import { topProducts } from '@/lib/dashboard-data'
+import { formatPeruvianSoles } from '@/lib/utils'
 
 export function TopProducts() {
   const max = Math.max(...topProducts.map((p) => p.unidades))
@@ -20,7 +21,7 @@ export function TopProducts() {
             <div className="flex items-baseline justify-between gap-3">
               <span className="text-sm font-medium text-card-foreground">{p.nombre}</span>
               <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
-                {p.unidades} uds · {soles(p.ingreso)}
+                {p.unidades} uds · {formatPeruvianSoles(p.ingreso)}
               </span>
             </div>
             <div className="mt-2 h-2 overflow-hidden rounded-full bg-muted">

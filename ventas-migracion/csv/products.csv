@@ -1,0 +1,16 @@
+﻿product_id,name,category,price,active
+P001,Americano,Cafés,8.5,true
+P002,Cappuccino,Cafés,12,true
+P003,Latte,Cafés,13,true
+P004,Mocaccino,Cafés,14.5,true
+P005,Chocolate caliente,Cafés,12.5,true
+P006,Cold Brew,Bebidas frías,14,true
+P007,Frappé de café,Bebidas frías,16.5,true
+P008,Limonada de hierbabuena,Bebidas frías,11,true
+P009,Cheesecake de maracuyá,Postres,16,true
+P010,Torta de chocolate,Postres,15,true
+P011,Brownie con nuez,Postres,12.5,true
+P012,Croissant,Desayunos,9,true
+P013,Sándwich mixto,Desayunos,17,true
+P014,Alfajor de maicena,Snacks,6.5,true
+P015,Galleta de avena,Snacks,5.5,false

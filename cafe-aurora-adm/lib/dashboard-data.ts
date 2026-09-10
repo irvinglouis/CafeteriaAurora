@@ -209,8 +209,3 @@ export const activity: ActivityItem[] = [
   },
 ]
 
-export const soles = (value: number) =>
-  `S/.${value.toLocaleString('es-PE', {
-    minimumFractionDigits: Number.isInteger(value) ? 0 : 2,
-    maximumFractionDigits: 2,
-  })}`
